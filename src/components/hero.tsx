@@ -64,7 +64,7 @@ export const Hero = () => {
                 repeatType: "loop",
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
-            />
+            />,
           </div>
         </a>
       </div>
