@@ -1,4 +1,3 @@
-# netlify.toml
 [build]
   base = "/"
   command = "npm install --legacy-peer-deps && npm run build"
