@@ -7,11 +7,9 @@ export const Tech = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-row flex-wrap justify-center gap-10">
+        {/* Iterate over each technology */}
         {TECHNOLOGIES.map((technology) => (
-          <div
-            className="w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center"
-            key={technology.name}
-          >
+          <div className="w-28 h-28" key={technology.name}>
             <BallCanvas icon={technology.icon} />
           </div>
         ))}
