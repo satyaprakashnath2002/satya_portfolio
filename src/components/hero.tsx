@@ -8,9 +8,9 @@ export const Hero = () => {
     <section className="relative w-full min-h-[100svh] mx-auto overflow-hidden">
       
       {/* Canvas Background */}
-      {/* <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0">
         <ComputersCanvas />
-      </div> */}
+      </div>
 
       {/* Content */}
       <div
