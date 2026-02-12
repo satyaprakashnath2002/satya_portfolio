@@ -10,13 +10,17 @@ import { Suspense } from "react";
 
 import CanvasLoader from "../loader";
 
+// ---------------- TYPES ----------------
 type BallProps = {
   imgUrl: string;
 };
 
-// Ball
+type BallCanvasProps = {
+  icon: string;
+};
+
+// ---------------- BALL COMPONENT ----------------
 const Ball = ({ imgUrl }: BallProps) => {
-  // use texture from drei
   const [decal] = useTexture([imgUrl]);
 
   return (
@@ -24,6 +28,7 @@ const Ball = ({ imgUrl }: BallProps) => {
       {/* Lights */}
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
+
       {/* Mesh */}
       <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
@@ -33,6 +38,8 @@ const Ball = ({ imgUrl }: BallProps) => {
           polygonOffsetFactor={-5}
           flatShading
         />
+
+        {/* Logo / Icon */}
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
@@ -43,21 +50,18 @@ const Ball = ({ imgUrl }: BallProps) => {
   );
 };
 
-type BallCanvasProps = {
-  icon: string;
-};
-
-// Ball Canvas
+// ---------------- BALL CANVAS ----------------
 const BallCanvas = ({ icon }: BallCanvasProps) => {
   return (
-    <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
-      {/* Show canvas loader on fallback */}
+    <Canvas
+      frameloop="demand"
+      gl={{ preserveDrawingBuffer: true }}
+    >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
 
-      {/* Preload all */}
       <Preload all />
     </Canvas>
   );

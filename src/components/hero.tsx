@@ -5,10 +5,10 @@ import { cn } from "../utils/lib";
 
 export const Hero = () => {
   return (
-    <section className="relative w-full min-h-[100svh] mx-auto overflow-hidden">
+    <section className="relative w-full min-h-screen  mx-auto overflow-hidden">
       
       {/* Canvas Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 w-full h-full">
         <ComputersCanvas />
       </div>
 
