@@ -6,19 +6,6 @@ import {
   backend,
   quality,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  tailwind,
-  nodejs,
-  mongodb,
-  python,
-  java,
-  springboot,
-  mysql,  
-  git,
   starbucks,
   tesla,
   shopify,
@@ -81,59 +68,19 @@ export const SERVICES = [
 
 // Technologies
 export const TECHNOLOGIES = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "Spring Boot",
-    icon: springboot,
-  },
-  {
-    name: "MySQL",
-    icon: mysql,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
+  { name: "HTML 5", icon: "/tech/html.png" },
+  { name: "CSS 3", icon: "/tech/css.png" },
+  { name: "JavaScript", icon: "/tech/javascript.png" },
+  { name: "TypeScript", icon: "/tech/typescript.png" },
+  { name: "React JS", icon: "/tech/reactjs.png" },
+  { name: "Tailwind CSS", icon: "/tech/tailwind.png" },
+  { name: "Node JS", icon: "/tech/nodejs.png" },
+  { name: "MongoDB", icon: "/tech/mongodb.png" },
+  { name: "Python", icon: "/tech/python.png" },
+  { name: "Java", icon: "/tech/java.png" },
+  { name: "Spring Boot", icon: "/tech/springboot.png" },
+  { name: "MySQL", icon: "/tech/mysql.png" },
+  { name: "Git", icon: "/tech/git.png" },
 ] as const;
 
 // Experiences
