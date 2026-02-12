@@ -6,10 +6,13 @@ import { SectionWrapper } from "../hoc";
 export const Tech = () => {
   return (
     <SectionWrapper>
-      <div className="flex flex-row flex-wrap justify-center gap-10">
+      <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-10 px-4 sm:px-0">
         {/* Iterate over each technology */}
         {TECHNOLOGIES.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
+          <div
+            key={technology.name}
+            className="w-20 h-20 sm:w-28 sm:h-28 flex items-center justify-center"
+          >
             <BallCanvas icon={technology.icon} />
           </div>
         ))}
