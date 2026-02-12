@@ -1,4 +1,4 @@
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { SERVICES } from "../constants";
@@ -16,11 +16,10 @@ type ServiceCardProps = {
 const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
   return (
     <Tilt
-      options={{
-        max: 45,
-        scale: 1,
-        speed: 450,
-      }}
+      tiltMaxAngleX={45}
+      tiltMaxAngleY={45}
+      scale={1}
+      transitionSpeed={450}
       className="xs:w-[250px] w-full"
     >
       <motion.div
@@ -38,7 +37,7 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
   );
 };
 
-// About
+// About Section
 export const About = () => {
   return (
     <SectionWrapper idName="about">
@@ -52,12 +51,12 @@ export const About = () => {
         {/* Body */}
         <motion.p
           variants={fadeIn(undefined, undefined, 0.1, 1)}
-          className="empty-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="text-secondary text-[17px] max-w-3xl leading-[30px] mt-4"
         >
-          I’m a Full-Stack Web Developer skilled in JavaScript, TypeScript, React.js, Node.js, and MongoDB, with experience building responsive, scalable web applications. I also have hands-on exposure to software testing and QA, and I enjoy collaborating to create efficient, user-friendly solutions that solve real-world problems.!
+          I’m a Full-Stack Web Developer skilled in JavaScript, TypeScript, React.js, Node.js, and MongoDB, with experience building responsive, scalable web applications. I also have hands-on exposure to software testing and QA, and I enjoy collaborating to create efficient, user-friendly solutions that solve real-world problems.
         </motion.p>
 
-        {/* Service Card */}
+        {/* Service Cards */}
         <div className="mt-20 flex flex-wrap gap-10">
           {SERVICES.map((service, i) => (
             <ServiceCard key={service.title} index={i} {...service} />
