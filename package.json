@@ -3,9 +3,9 @@
   "version": "1.1.4",
   "private": true,
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Satyaprakash Nath",
+    "email": "satyaprakashnath2002@gmail.com",
+    "url": "https://github.com/satyaprakashnath2002/MyPortfolio"
   },
   "description": "Modern 3D Portfolio using React, Three.js and Typescript",
   "keywords": [
@@ -19,26 +19,6 @@
     "html",
     "css",
     "tailwindcss"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sanidhyy/3d-portfolio.git"
-  },
-  "homepage": "https://github.com/sanidhyy/3d-portfolio#readme",
-  "bugs": {
-    "url": "https://github.com/sanidhyy/3d-portfolio/issues",
-    "email": "sanidhya.verma12345@gmail.com"
-  },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
   ],
   "type": "module",
   "scripts": {
@@ -54,8 +34,8 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.29.2",
     "maath": "^0.10.8",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^7.13.0",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
